@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional personal brand website for Agriculture Industry Leader with 25+ years of experience in Sales, Marketing, and Agri-Business Leadership.">
+    <meta name="keywords" content="Agriculture, Leadership, Agri-business, Sales, Marketing, Monsanto, Dow AgroSciences, Corteva">
+    <meta name="author" content="Agriculture Industry Leader">
+    <title>Agriculture Leader - Professional Brand & Consulting</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #fafafa;
+        }
+
+        /* ============ HEADER & NAVIGATION ============ */
+        header {
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c5f2d;
+            letter-spacing: -0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #2c5f2d;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #2c3e50;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            background: linear-gradient(135deg, #f5f7f6 0%, #e8f0e9 100%);
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #1a3a1a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 20px;
+            color: #4a5f4a;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background-color: #2c5f2d;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1a3a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(44, 95, 45, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #2c5f2d;
+            border: 2px solid #2c5f2d;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2c5f2d;
+            color: white;
+        }
+
+        /* ============ HIGHLIGHTS SECTION ============ */
+        .highlights {
+            background-color: #fff;
+            padding: 80px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight-card {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .highlight-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+
+        .highlight-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .highlight-text {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        /* ============ ABOUT SECTION ============ */
+        .about {
+            background-color: #fff;
+            padding: 100px 20px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a3a1a;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #2c5f2d;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: #1a3a1a;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4c 100%);
+            height: 400px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ============ EXPERIENCE SECTION ============ */
+        .experience {
+            background-color: #f5f7f6;
+            padding: 100px 20px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2c5f2d;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateX(5px);
+        }
+
+        .timeline-item h3 {
+            font-size: 22px;
+            color: #1a3a1a;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .company {
+            font-size: 14px;
+            color: #2c5f2d;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item p {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .timeline-item .metrics {
+            background-color: #f5f7f6;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        /* ============ VENTURES SECTION ============ */
+        .ventures {
+            background-color: white;
+            padding: 100px 20px;
+        }
+
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .venture-card {
+            background-color: #f5f7f6;
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid #2c5f2d;
+            transition: all 0.3s ease;
+        }
+
+        .venture-card:hover {
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+            transform: translateY(-8px);
+        }
+
+        .venture-card h3 {
+            font-size: 24px;
+            color: #1a3a1a;
+            margin-bottom: 15px;
+        }
+
+        .venture-card .role {
+            font-size: 12px;
+            color: #2c5f2d;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .venture-card p {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        /* ============ EXPERTISE SECTION ============ */
+        .expertise {
+            background-color: #f5f7f6;
+            padding: 100px 20px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .expertise-box {
+            background-color: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .expertise-box:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .expertise-box h3 {
+            font-size: 20px;
+            color: #1a3a1a;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .expertise-box p {
+            color: #2c3e50;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        /* ============ CONTACT SECTION ============ */
+        .contact {
+            background: linear-gradient(135deg, #2c5f2d 0%, #1a3a1a 100%);
+            padding: 100px 20px;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-title::after {
+            background-color: #8fbc8f;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+        }
+
+        .contact-item label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+
+        .contact-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact .btn-primary {
+            background-color: white;
+            color: #2c5f2d;
+            margin-top: 10px;
+        }
+
+        .contact .btn-primary:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background-color: #1a3a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #8fbc8f;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* ============ RESPONSIVE DESIGN ============ */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                padding: 20px;
+                gap: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 16px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                height: 60px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero .subtitle {
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .highlight-number {
+                font-size: 36px;
+            }
+
+            .timeline-item {
+                padding: 25px;
+            }
+
+            .venture-card,
+            .expertise-box {
+                padding: 25px;
+            }
+        }
+
+        /* ============ ACCESSIBILITY ============ */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c5f2d;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============ HEADER & NAVIGATION ============ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">AGRITECH LEADER</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#ventures">Ventures</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ============ HERO SECTION ============ -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>25+ Years of Agriculture Leadership</h1>
+                <p class="subtitle">Strategic Sales, Business Development & Agri-Tech Innovation Across MNCs & Startups</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Work With Me</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore My Journey</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HIGHLIGHTS SECTION ============ -->
+        <section class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-number">25+</div>
+                <div class="highlight-label">Years of Experience</div>
+                <div class="highlight-text">Leading agriculture innovation and business growth</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">3</div>
+                <div class="highlight-label">MNC Leadership Roles</div>
+                <div class="highlight-text">Monsanto, Dow AgroSciences, Corteva Agriscience</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">3</div>
+                <div class="highlight-label">Ventures Founded</div>
+                <div class="highlight-text">Maxim Crop Sciences, Digigrowe, UPJAOO Brand</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">Pan-India</div>
+                <div class="highlight-label">Market Reach</div>
+                <div class="highlight-text">Strategic presence across Indian and Asian markets</div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT SECTION ============ -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Building India's Agricultural Future</h2>
+                        <p>With over 25 years in agriculture and agri-business, I have witnessed and shaped the evolution of crop science, farmer engagement, and agri-tech innovation across India and Asian markets.</p>
+                        <p>My journey spans from leading sales and marketing strategies at global agriculture MNCs like Monsanto, Dow AgroSciences, and Corteva Agriscience, to building and scaling entrepreneurial ventures that directly impact farmers, agri-businesses, and the broader agricultural ecosystem.</p>
+                        <p><strong>Core Philosophy:</strong> Agriculture development is not just about products—it's about building sustainable systems, empowering stakeholders, and creating lasting impact through strategic leadership, trust, and innovation.</p>
+                        <p>Today, I work as a strategic advisor, mentor, and thought leader, supporting agri-companies, startups, and young professionals navigate growth, market entry, and leadership challenges in a rapidly evolving agricultural landscape.</p>
+                    </div>
+                    <div class="about-image">
+                        [Professional Portrait or Agriculture Leadership Image]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE SECTION ============ -->
+        <section id="experience" class="experience">
+            <div class="section-container">
+                <h2 class="section-title">Career Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Monsanto India</h3>
+                        <div class="company">Sales & Marketing Leadership</div>
+                        <p>Spearheaded sales strategy and market development initiatives in India's crop science sector. Built and managed high-performing sales teams, established dealer networks, and drove market penetration across multiple crop categories.</p>
+                        <div class="metrics">
+                            <strong>Impact:</strong> Launched flagship products, scaled distribution networks, led team of 50+ professionals, achieved significant revenue growth
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Dow AgroSciences</h3>
+                        <div class="company">Market Development & Channel Strategy</div>
+                        <p>Developed go-to-market strategies for emerging markets in Asia. Focused on building sustainable channel partnerships, managing business development, and establishing Dow's market presence in competitive agri-segments.</p>
+                        <div class="metrics">
+                            <strong>Impact:</strong> Expanded market reach, established strategic partnerships, managed multi-million dollar portfolios
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Corteva Agriscience</h3>
+                        <div class="company">Regional Leadership & Strategic Planning</div>
+                        <p>Led regional business strategy for India and Asian territories. Managed P&L, oversaw market segmentation, drove innovation in farmer engagement models, and built leadership teams.</p>
+                        <div class="metrics">
+                            <strong>Impact:</strong> Regional revenue growth, establishment of farmer-centric engagement programs, leadership development initiatives
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Current & Entrepreneurial Ventures</h3>
+                        <div class="company">Director, Founder & Brand Leader</div>
+                        <p>Transitioned to entrepreneurship to directly impact agricultural innovation. Building multiple ventures focused on different segments of the agricultural value chain—from crop science to digital agriculture and farmer empowerment.</p>
+                        <div class="metrics">
+                            <strong>Ventures:</strong> Maxim Crop Sciences, Digigrowe, UPJAOO Brand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ VENTURES SECTION ============ -->
+        <section id="ventures" class="ventures">
+            <div class="section-container">
+                <h2 class="section-title">Entrepreneurship & Ventures</h2>
+                <div class="ventures-grid">
+                    <div class="venture-card">
+                        <div class="role">Director</div>
+                        <h3>Maxim Crop Sciences</h3>
+                        <p><strong>Vision:</strong> Delivering high-quality crop science solutions to Indian farmers and agri-businesses.</p>
+                        <p><strong>Focus:</strong> Product development, distribution network building, farmer engagement, and market leadership in specialized crop segments.</p>
+                        <p><strong>Impact:</strong> Direct engagement with farming communities, building sustainable agricultural practices, creating economic value across the agri-value chain.</p>
+                    </div>
+
+                    <div class="venture-card">
+                        <div class="role">Founder</div>
+                        <h3>Digigrowe</h3>
+                        <p><strong>Vision:</strong> Leverage digital technology to transform farmer engagement and agricultural decision-making.</p>
+                        <p><strong>Focus:</strong> Digital farming solutions, data-driven agriculture, farmer-centric platforms, agri-tech innovation.</p>
+                        <p><strong>Impact:</strong> Bridging the gap between technology and traditional farming, empowering farmers with knowledge and tools for better yields.</p>
+                    </div>
+
+                    <div class="venture-card">
+                        <div class="role">Brand Founder</div>
+                        <h3>UPJAOO Brand</h3>
+                        <p><strong>Vision:</strong> Build a trusted, farmer-first brand that represents quality, integrity, and sustainability in agriculture.</p>
+                        <p><strong>Focus:</strong> Brand building, market positioning, farmer loyalty, sustainable agricultural practices.</p>
+                        <p><strong>Impact:</strong> Creating brand equity in the agricultural sector, establishing direct farmer relationships, promoting sustainable and profitable farming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERTISE SECTION ============ -->
+        <section id="expertise" class="expertise">
+            <div class="section-container">
+                <h2 class="section-title">Expertise & Services</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-box">
+                        <h3>📊 Sales & Marketing Strategy</h3>
+                        <p>Comprehensive strategy development for product launches, market penetration, and revenue growth. From go-to-market planning to channel strategy execution.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>🌍 Market Development</h3>
+                        <p>Expertise in identifying new markets, understanding regional dynamics, building partnerships, and establishing sustainable business presence in competitive agricultural sectors.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>🤝 Channel & Distribution Building</h3>
+                        <p>Proven track record in building dealer networks, managing channel partners, and creating sustainable distribution systems that drive scalable business growth.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>👨‍🌾 Farmer Engagement Programs</h3>
+                        <p>Design and implementation of farmer-centric programs, extension services, and engagement models that build trust and drive adoption.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>👔 Leadership Coaching</h3>
+                        <p>Mentoring and coaching for emerging leaders in agriculture. Focus on strategic thinking, team building, decision-making, and building high-performance cultures.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>🚀 Advisory for Startups & SMEs</h3>
+                        <p>Strategic advisory for agri-startups and SMEs—market validation, business model development, scaling strategies, and growth acceleration.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>🎯 Business Scaling & Growth</h3>
+                        <p>End-to-end support in scaling agricultural businesses—from startup to market leader. Product-market fit, team building, and sustainable growth strategies.</p>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>💡 Agri-Tech Innovation</h3>
+                        <p>Expertise in digital agriculture, farmer tech adoption, innovation ecosystems, and building technology-enabled solutions for agricultural challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Collaboration Opportunities</h3>
+
+                        <div class="contact-item">
+                            <label>📞 Strategic Consulting</label>
+                            <p>Advise on go-to-market strategy, market development, and business scaling for agri-companies and startups.</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>🎤 Speaking & Thought Leadership</label>
+                            <p>Keynotes, panel discussions, and industry insights on agriculture leadership, innovation, and market trends.</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>📋 Board Advisory & Mentorship</label>
+                            <p>Strategic advisory roles, board memberships, and mentorship for agricultural leaders and organizations.</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>👥 Leadership Training</label>
+                            <p>Customized leadership development programs for agri-company teams and young professionals in agriculture.</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject / Opportunity Type *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="e.g., Consulting, Speaking, Advisory">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your collaboration opportunity..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer">Medium</a>
+        </div>
+        <p>&copy; 2025 Agriculture Industry Leader. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Construct mailto link
+            const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+
+            // Alternative: You can also log the form data or send it to a backend service
+            console.log('Form submitted:', { name, email, subject, message });
+        }
+
+        // Smooth scroll behavior for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // SEO & Analytics (add your tracking code here)
+        // Example: Google Analytics, conversion tracking, etc.
+    </script>
+</body>
+</html>

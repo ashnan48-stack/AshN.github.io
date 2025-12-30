@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashutosh Nanoti - Visionary Agriculture Leader transforming India's farming landscape through innovation, strategy, and sustainable growth.">
+    <meta name="keywords" content="Ashutosh Nanoti, Agriculture Innovation, Business Leadership, Strategic Growth, Agri-Tech">
+    <meta name="author" content="Ashutosh Nanoti">
+    <title>Ashutosh Nanoti | Architect of Agricultural Excellence</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        /* ============ HEADER & NAVIGATION ============ */
+        header {
+            background: linear-gradient(135deg, #1B3A8C 0%, #0a1f4a 100%);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(27, 58, 140, 0.3);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #e3f2fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #4a9eff, #fff);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            background: linear-gradient(135deg, #1B3A8C 0%, #0a1f4a 50%, #000 100%);
+            padding: 140px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="50" r="1.5" fill="rgba(255,255,255,0.08)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero .subtitle {
+            font-size: 24px;
+            color: #4a9eff;
+            margin-bottom: 50px;
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            font-size: 13px;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.4s ease;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4a9eff, #2c7dd8);
+            color: white;
+            box-shadow: 0 8px 20px rgba(74, 158, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(74, 158, 255, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #4a9eff;
+            border: 2px solid #4a9eff;
+        }
+
+        .btn-secondary:hover {
+            background: #4a9eff;
+            color: white;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============ STATS SECTION ============ */
+        .stats {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8eef7 100%);
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(27, 58, 140, 0.08);
+            transition: all 0.4s ease;
+            border-top: 4px solid #1B3A8C;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(27, 58, 140, 0.15);
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #1B3A8C, #4a9eff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat-description {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* ============ ABOUT SECTION ============ */
+        .about {
+            background: #fff;
+            padding: 120px 20px;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1B3A8C;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: #4a9eff;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            color: #1B3A8C;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background: linear-gradient(135deg, #e8eef7 0%, #f8f9fa 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #4a9eff;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(27, 58, 140, 0.1);
+        }
+
+        .feature-item strong {
+            color: #1B3A8C;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #1B3A8C 0%, #4a9eff 100%);
+            height: 500px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 20px 50px rgba(27, 58, 140, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        /* ============ JOURNEY SECTION ============ */
+        .journey {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8eef7 100%);
+            padding: 120px 20px;
+        }
+
+        .journey-timeline {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #1B3A8C, #4a9eff, #1B3A8C);
+            top: 0;
+        }
+
+        .journey-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .journey-item:nth-child(odd) {
+            margin-left: 0;
+            margin-right: 50%;
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .journey-item:nth-child(even) {
+            margin-left: 50%;
+            margin-right: 0;
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .journey-item::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #4a9eff;
+            border: 4px solid white;
+            border-radius: 50%;
+            top: 0;
+            box-shadow: 0 0 0 4px #1B3A8C;
+            z-index: 10;
+        }
+
+        .journey-item:nth-child(odd)::before {
+            right: -46px;
+        }
+
+        .journey-item:nth-child(even)::before {
+            left: -46px;
+        }
+
+        .journey-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(27, 58, 140, 0.08);
+            transition: all 0.4s ease;
+        }
+
+        .journey-content:hover {
+            box-shadow: 0 15px 40px rgba(27, 58, 140, 0.15);
+            transform: scale(1.02);
+        }
+
+        .journey-year {
+            font-size: 13px;
+            color: #4a9eff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .journey-title {
+            font-size: 20px;
+            color: #1B3A8C;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .journey-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .journey-timeline::before {
+                left: 0;
+                transform: translateX(-50%);
+            }
+
+            .journey-item:nth-child(odd),
+            .journey-item:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: left;
+                padding-left: 40px;
+                padding-right: 0;
+            }
+
+            .journey-item::before {
+                left: -46px !important;
+                right: auto !important;
+            }
+        }
+
+        /* ============ EXPERTISE SECTION ============ */
+        .expertise {
+            background: #fff;
+            padding: 120px 20px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .expertise-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8eef7 100%);
+            padding: 50px 35px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(27, 58, 140, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(27, 58, 140, 0.1));
+            transition: top 0.4s ease;
+            z-index: 0;
+        }
+
+        .expertise-card:hover::before {
+            top: 0;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(27, 58, 140, 0.15);
+        }
+
+        .expertise-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .expertise-card h3 {
+            font-size: 22px;
+            color: #1B3A8C;
+            margin-bottom: 15px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+        }
+
+        .expertise-card p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============ VENTURES SECTION ============ */
+        .ventures {
+            background: linear-gradient(135deg, #1B3A8C 0%, #0a1f4a 100%);
+            padding: 120px 20px;
+            color: white;
+        }
+
+        .ventures .section-title {
+            color: white;
+        }
+
+        .ventures .section-subtitle {
+            color: #4a9eff;
+        }
+
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .venture-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 45px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+        }
+
+        .venture-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 50px rgba(74, 158, 255, 0.2);
+        }
+
+        .venture-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .venture-card h3 {
+            font-size: 26px;
+            color: #4a9eff;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .venture-subtitle {
+            font-size: 13px;
+            color: #a0c4ff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .venture-card p {
+            font-size: 15px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* ============ ACHIEVEMENTS SECTION ============ */
+        .achievements {
+            background: #fff;
+            padding: 120px 20px;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .achievement-item {
+            padding: 35px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8eef7 100%);
+            border-radius: 12px;
+            border-left: 5px solid #1B3A8C;
+            transition: all 0.4s ease;
+        }
+
+        .achievement-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(27, 58, 140, 0.1);
+        }
+
+        .achievement-metric {
+            font-size: 32px;
+            font-weight: 900;
+            color: #4a9eff;
+            margin-bottom: 8px;
+        }
+
+        .achievement-title {
+            font-size: 16px;
+            color: #1B3A8C;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .achievement-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ============ CONTACT SECTION ============ */
+        .contact {
+            background: linear-gradient(135deg, #1B3A8C 0%, #000 100%);
+            padding: 120px 20px;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-subtitle {
+            color: #4a9eff;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        .contact-info-box {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 50px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item {
+            margin-bottom: 40px;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #4a9eff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .contact-value {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .contact-value a {
+            color: #4a9eff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-value a:hover {
+            color: #fff;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 50px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: #4a9eff;
+            font-weight: 700;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #4a9eff;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 14px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 25px;
+        }
+
+        .footer-links a {
+            color: #4a9eff;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .footer-text {
+            color: #888;
+            font-size: 13px;
+        }
+
+        /* ============ RESPONSIVE DESIGN ============ */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #1B3A8C 0%, #0a1f4a 100%);
+                padding: 20px;
+                gap: 15px;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero .subtitle {
+                font-size: 18px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .journey-timeline::before {
+                left: 10px;
+            }
+
+            .journey-item:nth-child(odd) {
+                margin-right: 0;
+                padding-right: 0;
+                padding-left: 40px;
+                text-align: left;
+            }
+
+            .journey-item:nth-child(even) {
+                margin-left: 0;
+                padding-left: 40px;
+            }
+
+            .journey-item::before {
+                left: -46px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                height: 60px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav a {
+                font-size: 11px;
+                gap: 20px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero .subtitle {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .stat-number {
+                font-size: 42px;
+            }
+
+            .expertise-grid,
+            .ventures-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- ============ HEADER & NAVIGATION ============ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">AN</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#ventures">Ventures</a></li>
+                    <li><a href="#contact">Connect</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Architect of Agricultural Excellence</h1>
+            <p class="subtitle">Transforming India's Farming Landscape Through Innovation & Strategic Vision</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Let's Collaborate</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Discover My Story</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STATS SECTION ============ -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Years of Impact</div>
+                <div class="stat-description">Driving agricultural transformation across Asia</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Farmers Empowered</div>
+                <div class="stat-description">Direct community engagement through UPJAOO</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Ventures Founded</div>
+                <div class="stat-description">Maxim Seeds, Digigrowe, UPJAOO ecosystem</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">300%+</div>
+                <div class="stat-label">Growth Achieved</div>
+                <div class="stat-description">Exponential business expansion across markets</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">Who I Am</h2>
+            <p class="section-subtitle">Beyond the Resume</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>A Visionary Bridge Between Legacy & Innovation</h2>
+                    <p>From pioneering India's first genetically modified seed launch at Monsanto to founding transformative ventures that reach 50,000+ farming communities, my journey represents a relentless commitment to agricultural excellence.</p>
+                    <p>My career has been defined by creating sustainable ecosystems where technology meets tradition, where business vision aligns with farmer welfare, and where exponential growth coexists with social impact.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <strong>🎯 Strategic Visionary</strong>
+                            Market pioneer with proven ability to identify opportunities others miss
+                        </div>
+                        <div class="feature-item">
+                            <strong>🚀 Growth Catalyst</strong>
+                            Built businesses from concept to 300%+ exponential expansion
+                        </div>
+                        <div class="feature-item">
+                            <strong>👥 People Leader</strong>
+                            Developed high-performance teams of 50+ professionals across geographies
+                        </div>
+                        <div class="feature-item">
+                            <strong>🌱 Impact Creator</strong>
+                            Direct engagement with farming communities through technology & knowledge sharing
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    Agricultural Innovation Leader | Pune-Based | Pan-India Impact
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ JOURNEY SECTION ============ -->
+    <section id="journey" class="journey">
+        <div class="section-container">
+            <h2 class="section-title">Professional Evolution</h2>
+            <p class="section-subtitle">From Sales to Visionary Leadership</p>
+
+            <div class="journey-timeline">
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">2019 - Present</div>
+                        <div class="journey-title">Founder & Visionary</div>
+                        <div class="journey-description">Launched UPJAOO & Digigrowe ecosystems, reaching 50K+ farmers. Pioneering agri-tech solutions and sustainable farming practices across India.</div>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">2018</div>
+                        <div class="journey-title">Commercial Excellence at Scale</div>
+                        <div class="journey-description">Delivered ₹322 Cr revenue (103%+ targets) as Marketing Manager at Corteva Agrisciences, driving pan-India channel optimization.</div>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">2014-2017</div>
+                        <div class="journey-title">National Market Leader</div>
+                        <div class="journey-description">Built seeds business from zero across 7 states at Dow AgroSciences. Doubled business consistently with strategic market entry & product launches.</div>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">2012-2014</div>
+                        <div class="journey-title">Regional Profit Commander</div>
+                        <div class="journey-description">Led Southwest India & Sri Lanka operations at Monsanto, achieving 11% above targets while building regional teams of 50+ professionals.</div>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">2002-2011</div>
+                        <div class="journey-title">Pioneering Bt Cotton Launch</div>
+                        <div class="journey-description">Part of historic 16-member team that launched India's first genetically modified seed. Built regional markets, achieved exponential growth.</div>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <div class="journey-year">1995-2001</div>
+                        <div class="journey-title">Foundation Building</div>
+                        <div class="journey-description">Started as Marketing Executive at Monsanto, grew herbicide business from zero to 29 KL. Built foundational market expertise across Western India.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERTISE SECTION ============ -->
+    <section id="expertise" class="expertise">
+        <div class="section-container">
+            <h2 class="section-title">Strategic Competencies</h2>
+            <p class="section-subtitle">What I Bring to the Table</p>
+
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">📈</div>
+                    <h3>Market Mastery</h3>
+                    <p>Identify untapped opportunities, create market segments, and penetrate new territories with surgical precision—growing businesses 300%+ exponentially.</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">🎯</div>
+                    <h3>Strategy Execution</h3>
+                    <p>Transform market plans into measurable results. Build channel networks, optimize sales funnels, and achieve consistent targets with excellence.</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">🚀</div>
+                    <h3>Business Innovation</h3>
+                    <p>Launch groundbreaking products like India's first Bt Cotton. Pioneer agri-tech solutions that revolutionize farming practices and farmer engagement.</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">👥</div>
+                    <h3>Leadership Catalyst</h3>
+                    <p>Build, mentor, and inspire high-performance teams. Create organizational cultures that drive excellence, innovation, and sustainable growth.</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">🌍</div>
+                    <h3>Ecosystem Building</h3>
+                    <p>Develop sustainable business ecosystems. Manage partnerships, channel relationships, and stakeholder networks across geographies and sectors.</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">💡</div>
+                    <h3>Agri-Tech Innovation</h3>
+                    <p>Bridge traditional farming with digital solutions. Create farmer-centric platforms, knowledge-sharing systems, and technology adoption frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS SECTION ============ -->
+    <section class="achievements">
+        <div class="section-container">
+            <h2 class="section-title">Defining Moments</h2>
+            <p class="section-subtitle">Milestone Achievements</p>
+
+            <div class="achievement-grid">
+                <div class="achievement-item">
+                    <div class="achievement-metric">1st</div>
+                    <div class="achievement-title">India's Bt Cotton Pioneer</div>
+                    <div class="achievement-description">Part of historic launch team for genetically modified seeds—a watershed moment in Indian agriculture</div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-metric">300%</div>
+                    <div class="achievement-title">Exponential Growth</div>
+                    <div class="achievement-description">Achieved recorded 300% business expansion in North region during market development phase</div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-metric">50K+</div>
+                    <div class="achievement-title">Farmers Impacted</div>
+                    <div class="achievement-description">UPJAOO reaching directly 50,000+ farming families with knowledge, technology, and support</div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-metric">₹322Cr</div>
+                    <div class="achievement-title">Revenue Excellence</div>
+                    <div class="achievement-description">103% target achievement at Corteva—₹322 Cr delivered against ₹310 Cr plan</div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-metric">2x</div>
+                    <div class="achievement-title">Consistent Doubling</div>
+                    <div class="achievement-description">Doubled business for 3 consecutive years at Dow AgroSciences through strategic execution</div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-metric">50+</div>
+                    <div class="achievement-title">Team Leadership</div>
+                    <div class="achievement-description">Built and led teams of 50+ professionals across regional operations with strong performance culture</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VENTURES SECTION ============ -->
+    <section id="ventures" class="ventures">
+        <div class="section-container">
+            <h2 class="section-title">Entrepreneurial Ventures</h2>
+            <p class="section-subtitle">Building the Future of Agriculture</p>
+
+            <div class="ventures-grid">
+                <div class="venture-card">
+                    <div class="venture-icon">🌾</div>
+                    <h3>UPJAOO</h3>
+                    <div class="venture-subtitle">Brand Founder</div>
+                    <p>A farmer-first movement creating sustainable ecosystems for agricultural excellence, soil health management, and agri-entrepreneurship across India.</p>
+                    <p><strong>Impact:</strong> 50,000+ farmers engaged through mobile & social platforms</p>
+                </div>
+
+                <div class="venture-card">
+                    <div class="venture-icon">🚀</div>
+                    <h3>Digigrowe</h3>
+                    <div class="venture-subtitle">Co-Founder</div>
+                    <p>Transforming agriculture through digital innovation—bridging traditional farming wisdom with cutting-edge technology for better yields and farmer empowerment.</p>
+                    <p><strong>Vision:</strong> Technology-enabled farmer communities</p>
+                </div>
+
+                <div class="venture-card">
+                    <div class="venture-icon">🌱</div>
+                    <h3>Maxim Seeds</h3>
+                    <div class="venture-subtitle">Co-Founder & Director</div>
+                    <p>Premium seed provider delivering quality corn & vegetable seeds with farmer-centric approach. Established as trusted brand in central Indian markets.</p>
+                    <p><strong>Focus:</strong> Quality, distribution excellence, farmer relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Let's Create Impact Together</h2>
+            <p class="section-subtitle">Consulting | Speaking | Advisory | Mentorship</p>
+
+            <div class="contact-content">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <span class="contact-label">📧 Email</span>
+                        <div class="contact-value">
+                            <a href="mailto:ashutoshnanoti@maximseeds.com">ashutoshnanoti@maximseeds.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">📧 Alternative</span>
+                        <div class="contact-value">
+                            <a href="mailto:Ashutosh@upjaoo.in">Ashutosh@upjaoo.in</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">📱 Mobile</span>
+                        <div class="contact-value">
+                            <a href="tel:+917718831525">+91 7718 831525</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">📍 Location</span>
+                        <div class="contact-value">
+                            Pune, India | Pan-Asia Operations
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">🎯 Expertise Areas</span>
+                        <div class="contact-value">
+                            Market Strategy | Business Growth | Team Development | Agri-Tech Innovation
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Collaboration Interest *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Consulting / Speaking / Advisory">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your opportunity..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+            <p class="footer-text">&copy; 2025 Ashutosh Nanoti. Transforming Agriculture Through Innovation & Excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const mailtoLink = `mailto:ashutoshnanoti@maximseeds.com?subject=${encodeURIComponent('Collaboration Interest: ' + subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest: ${subject}\n\nMessage:\n${message}`)}`;
+            
+            window.location.href = mailtoLink;
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

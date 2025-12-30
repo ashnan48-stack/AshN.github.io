@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashutosh Nanoti - Agriculture Industry Leader with 25+ years of experience in Sales, Marketing, Business Development, and Agri-Tech Innovation.">
+    <meta name="keywords" content="Ashutosh Nanoti, Agriculture, Leadership, Sales, Marketing, Monsanto, Dow AgroSciences, Corteva Agriscience, Maxim Seeds, Digigrowe, UPJAOO">
+    <meta name="author" content="Ashutosh Nanoti">
+    <title>Ashutosh Nanoti - Agriculture Leader & Consultant</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #fafafa;
+        }
+
+        /* ============ HEADER & NAVIGATION ============ */
+        header {
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2c5f2d;
+            letter-spacing: -0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #2c5f2d;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #2c3e50;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            background: linear-gradient(135deg, #f5f7f6 0%, #e8f0e9 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #1a3a1a;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .hero .title {
+            font-size: 18px;
+            color: #2c5f2d;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero .subtitle {
+            font-size: 20px;
+            color: #4a5f4a;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background-color: #2c5f2d;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1a3a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(44, 95, 45, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #2c5f2d;
+            border: 2px solid #2c5f2d;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2c5f2d;
+            color: white;
+        }
+
+        /* ============ HIGHLIGHTS SECTION ============ */
+        .highlights {
+            background-color: #fff;
+            padding: 80px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight-card {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .highlight-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+
+        .highlight-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .highlight-text {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        /* ============ ABOUT SECTION ============ */
+        .about {
+            background-color: #fff;
+            padding: 100px 20px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a3a1a;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #2c5f2d;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: #1a3a1a;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4c 100%);
+            height: 400px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ============ EXPERTISE SECTION ============ */
+        .expertise-section {
+            background-color: #f5f7f6;
+            padding: 100px 20px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .expertise-box {
+            background-color: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .expertise-box:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .expertise-box h3 {
+            font-size: 18px;
+            color: #1a3a1a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .expertise-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .expertise-box li {
+            color: #2c3e50;
+            line-height: 1.8;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .expertise-box li:before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #2c5f2d;
+            font-weight: bold;
+        }
+
+        /* ============ EXPERIENCE SECTION ============ */
+        .experience {
+            background-color: #fff;
+            padding: 100px 20px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background-color: #f5f7f6;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 5px solid #2c5f2d;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateX(5px);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .timeline-item h3 {
+            font-size: 22px;
+            color: #1a3a1a;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .timeline-item .company {
+            font-size: 13px;
+            color: #2c5f2d;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-item .duration {
+            font-size: 12px;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+
+        .timeline-item p {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .timeline-item ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .timeline-item li {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .timeline-item li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2c5f2d;
+            font-weight: bold;
+        }
+
+        /* ============ VENTURES SECTION ============ */
+        .ventures {
+            background-color: #f5f7f6;
+            padding: 100px 20px;
+        }
+
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .venture-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid #2c5f2d;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .venture-card:hover {
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+            transform: translateY(-8px);
+        }
+
+        .venture-card h3 {
+            font-size: 24px;
+            color: #1a3a1a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .venture-card .role {
+            font-size: 12px;
+            color: #2c5f2d;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .venture-card p {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        /* ============ EDUCATION SECTION ============ */
+        .education {
+            background-color: #fff;
+            padding: 100px 20px;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .education-card {
+            background-color: #f5f7f6;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #2c5f2d;
+        }
+
+        .education-card h3 {
+            font-size: 20px;
+            color: #1a3a1a;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .education-card .institution {
+            font-size: 14px;
+            color: #2c5f2d;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .education-card .year {
+            font-size: 13px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* ============ CONTACT SECTION ============ */
+        .contact {
+            background: linear-gradient(135deg, #2c5f2d 0%, #1a3a1a 100%);
+            padding: 100px 20px;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-title::after {
+            background-color: #8fbc8f;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            opacity: 0.9;
+            font-weight: 600;
+        }
+
+        .contact-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-item a {
+            color: #8fbc8f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: white;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact .btn-primary {
+            background-color: white;
+            color: #2c5f2d;
+            margin-top: 10px;
+        }
+
+        .contact .btn-primary:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background-color: #1a3a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #8fbc8f;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* ============ RESPONSIVE DESIGN ============ */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                padding: 20px;
+                gap: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 16px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-header {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                height: 60px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero .subtitle {
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .highlight-number {
+                font-size: 36px;
+            }
+
+            .timeline-item {
+                padding: 25px;
+            }
+
+            .venture-card,
+            .expertise-box {
+                padding: 25px;
+            }
+        }
+
+        /* ============ ACCESSIBILITY ============ */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c5f2d;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============ HEADER & NAVIGATION ============ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Ashutosh Nanoti</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#ventures">Ventures</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ============ HERO SECTION ============ -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ashutosh Nanoti</h1>
+                <p class="title">Agriculture Business Leader & Strategic Visionary</p>
+                <p class="subtitle">25+ Years of Sales, Marketing, Business Development & Agricultural Innovation</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get in Touch</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HIGHLIGHTS SECTION ============ -->
+        <section class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-number">25+</div>
+                <div class="highlight-label">Years of Experience</div>
+                <div class="highlight-text">Sales, Marketing, Business Development & Market Innovation</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">4</div>
+                <div class="highlight-label">Major MNC Roles</div>
+                <div class="highlight-text">Monsanto, Dow AgroSciences, Corteva Agrisciences</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">2</div>
+                <div class="highlight-label">Ventures Founded</div>
+                <div class="highlight-text">Maxim Seeds, Digigrowe & UPJAOO Brand</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">50K+</div>
+                <div class="highlight-label">Farmers Impacted</div>
+                <div class="highlight-text">Through UPJAOO farming community reach</div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT SECTION ============ -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">Professional Profile</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Dynamic Leader in Agricultural Innovation</h2>
+                        <p>A proactive and visionary leader with over 25 years of proven expertise in Sales, Marketing, Business Development, and New Market Development in the agriculture sector.</p>
+                        <p>Distinguished for pioneering the launch of <strong>Bt Cotton—India's first genetically modified seeds</strong>, and for driving exponential business growth across leading multinational organizations.</p>
+                        <p><strong>Core Strengths:</strong></p>
+                        <ul style="list-style: none; padding-left: 0; color: #2c3e50; line-height: 1.8;">
+                            <li>✓ Strategic business planning & market execution</li>
+                            <li>✓ Channel management & partner development</li>
+                            <li>✓ High-performance team leadership</li>
+                            <li>✓ New market identification & penetration</li>
+                            <li>✓ Customer relationship management excellence</li>
+                            <li>✓ Agri-tech innovation & technology deployment</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        Professional Agriculture Leader | 25+ Years
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERTISE SECTION ============ -->
+        <section id="expertise" class="expertise-section">
+            <div class="section-container">
+                <h2 class="section-title">Areas of Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-box">
+                        <h3>Business Development</h3>
+                        <ul>
+                            <li>Analyze market potential & conceptualize growth strategies</li>
+                            <li>Drive sales growth & profitability targets</li>
+                            <li>Lead market surveys & opportunity assessment</li>
+                            <li>Execute targeted business plans with measurable ROI</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>New Market Development</h3>
+                        <ul>
+                            <li>Identify & tap profitable market segments</li>
+                            <li>Develop market segmentation & penetration strategies</li>
+                            <li>Establish sustainable market presence</li>
+                            <li>Drive product-wise revenue targets</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>Channel Management</h3>
+                        <ul>
+                            <li>Develop & manage channel partner networks</li>
+                            <li>Guide partners toward revenue targets</li>
+                            <li>Build long-term business relationships</li>
+                            <li>Enable sustainable business growth</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>Marketing & Brand Strategy</h3>
+                        <ul>
+                            <li>Develop comprehensive marketing plans</li>
+                            <li>Execute advertising & promotional campaigns</li>
+                            <li>Brand building & market positioning</li>
+                            <li>Customer engagement programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>Team Management & Leadership</h3>
+                        <ul>
+                            <li>Manpower planning & talent development</li>
+                            <li>Build high-performance teams</li>
+                            <li>Leadership training & mentoring programs</li>
+                            <li>Organizational culture development</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-box">
+                        <h3>Strategic Planning</h3>
+                        <ul>
+                            <li>Market plan execution & profitability growth</li>
+                            <li>Business process optimization</li>
+                            <li>Regional leadership & P&L management</li>
+                            <li>Agri-input management strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE SECTION ============ -->
+        <section id="experience" class="experience">
+            <div class="section-container">
+                <h2 class="section-title">Career Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Founder & Director</h3>
+                                <p class="company">Digigrower Services Pvt Ltd & UPJAOO Brand</p>
+                            </div>
+                            <span class="duration">Jan 2019 – Present</span>
+                        </div>
+                        <p><strong>Location:</strong> Pune | <strong>Vision:</strong> Agricultural Technology & Farmer Empowerment</p>
+                        <ul>
+                            <li>Founded UPJAOO brand with mission to improve farm productivity and soil health management</li>
+                            <li>Developed mobile and social media platforms reaching 50,000+ farmers across India</li>
+                            <li>Expanded UPJAOO's footprints to support agri-entrepreneurship & livestock balanced feed management</li>
+                            <li>Built knowledge sharing platforms providing farming education & technology adoption</li>
+                            <li>Established direct farmer engagement model improving agricultural practices & yields</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Co-Founder & Director</h3>
+                                <p class="company">Maxim Seeds Pvt Ltd</p>
+                            </div>
+                            <span class="duration">Jan 2019 – Present</span>
+                        </div>
+                        <p><strong>Location:</strong> Pune | <strong>Focus:</strong> Seed Industry Excellence & Distribution</p>
+                        <ul>
+                            <li>Established Maxim as trusted seed brand in central India, focusing on corn & vegetable seeds</li>
+                            <li>Built people and business processes for superior customer service delivery</li>
+                            <li>Developed expertise and brand support framework for MNC clients in India</li>
+                            <li>Created sustainable agricultural solutions impacting farming communities</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Marketing & Commercial Effectiveness Manager</h3>
+                                <p class="company">Corteva Agrisciences</p>
+                            </div>
+                            <span class="duration">Jan 2018 – Dec 2018</span>
+                        </div>
+                        <p><strong>Location:</strong> Mumbai | <strong>Responsibility:</strong> Commercial Excellence & Channel Strategy</p>
+                        <ul>
+                            <li>Delivered ₹322 Cr revenue against plan of ₹310 Cr (103.8% achievement)</li>
+                            <li>Ensured correct new business management across western commercial units</li>
+                            <li>Rolled out channel realignment initiative across Pan-India operations</li>
+                            <li>Onboarded marketing campaign manager for enhanced market support</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>National Sales Leader (Seeds)</h3>
+                                <p class="company">Dow AgroSciences</p>
+                            </div>
+                            <span class="duration">Sep 2014 – Dec 2017</span>
+                        </div>
+                        <p><strong>Location:</strong> Pan-India | <strong>Achievement:</strong> Market Leadership & Expansion</p>
+                        <ul>
+                            <li>Established seeds business across 7 states with operational infrastructure</li>
+                            <li>Launched 2 new hybrid corn varieties in southern markets</li>
+                            <li>Doubled business consistently over 3 consecutive years through strategic growth</li>
+                            <li>Built sales team and channel network across emerging seed markets</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Profit Centre Head</h3>
+                                <p class="company">Monsanto India – Southwest Region & Sri Lanka</p>
+                            </div>
+                            <span class="duration">Oct 2012 – Aug 2014</span>
+                        </div>
+                        <p><strong>Location:</strong> Bangalore | <strong>Performance:</strong> Revenue Growth & Team Leadership</p>
+                        <ul>
+                            <li>Achieved first quarter financials 11% above sales targets for FY-14</li>
+                            <li>Led team of 5 RSM, 5 RC, and 26 TMS professionals</li>
+                            <li>Established people and business processes ensuring consistent growth</li>
+                            <li>Maintained strategic focus on team development and objective accountability</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Zonal Sales Manager</h3>
+                                <p class="company">Monsanto India – East Region</p>
+                            </div>
+                            <span class="duration">Dec 2011 – Sep 2012</span>
+                        </div>
+                        <p><strong>Location:</strong> Kolkata | <strong>Scope:</strong> East India, Bangladesh & Nepal</p>
+                        <ul>
+                            <li>Successfully transitioned from row crop/chemicals to vegetable division</li>
+                            <li>Conceptualized key strategies for market implementation</li>
+                            <li>Only zone to achieve 100% FY-12 business planned targets</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Regional Sales Manager</h3>
+                                <p class="company">Monsanto India – Karnataka</p>
+                            </div>
+                            <span class="duration">Oct 2008 – Nov 2011</span>
+                        </div>
+                        <p><strong>Location:</strong> Hubli | <strong>Recognition:</strong> Best Region Award 2009 & 2011</p>
+                        <ul>
+                            <li>Doubled corn business & chemical business in region</li>
+                            <li>Led successful new product launches and scale-up projects</li>
+                            <li>Established Margadarshi & Monsanto One programs for sustainable growth</li>
+                            <li>Won Best Region Award in annual sales conferences 2009 & 2011</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Regional Manager – Traits & Biotech</h3>
+                                <p class="company">Monsanto India – West Region</p>
+                            </div>
+                            <span class="duration">Sep 2007 – Oct 2008</span>
+                        </div>
+                        <p><strong>Location:</strong> Ahmedabad | <strong>Highlight:</strong> Technology Penetration & Licensing</p>
+                        <ul>
+                            <li>Coordinated with key sublicenses ensuring technology value establishment</li>
+                            <li>Led pricing discussions with government officials and politicians</li>
+                            <li>Added market knowledge and expertise to sublicensees</li>
+                            <li>Consistently grew technology penetration in Gujarat & MP</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Regional Manager – Traits & Biotech</h3>
+                                <p class="company">Monsanto India – North Region</p>
+                            </div>
+                            <span class="duration">Sep 2005 – Sep 2007</span>
+                        </div>
+                        <p><strong>Location:</strong> Bhatinda, Punjab | <strong>Growth:</strong> 300% Exponential Expansion</p>
+                        <ul>
+                            <li>Established B2B partnerships with key companies and sublicenses across 3 states</li>
+                            <li>Achieved recorded 300% exponential growth over previous years</li>
+                            <li>Secured government permissions for GM seeds in Haryana & Rajasthan</li>
+                            <li>Developed effective stakeholder relationships for market expansion</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Territory Manager</h3>
+                                <p class="company">Monsanto India – Maharashtra</p>
+                            </div>
+                            <span class="duration">Jan 2002 – Aug 2005</span>
+                        </div>
+                        <p><strong>Location:</strong> Akola | <strong>Landmark Achievement:</strong> First Bt Cotton Launch in India</p>
+                        <ul>
+                            <li>Actively involved in launching Bt Cotton—India's first genetically modified seeds</li>
+                            <li>Nominated as State Coordinator in 16-member national launch team</li>
+                            <li>Achieved 20% growth in corn and 100% growth in sunflower segment</li>
+                            <li>Partnered with sublicensees for maximum market impact</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Marketing Executive</h3>
+                                <p class="company">Monsanto India – Agricultural Chemicals</p>
+                            </div>
+                            <span class="duration">Sep 1996 – Dec 2001</span>
+                        </div>
+                        <p><strong>Location:</strong> Pune | <strong>Growth:</strong> 80% Consecutive Year Expansion</p>
+                        <ul>
+                            <li>Conceived sales strategy for chemical business in western Maharashtra</li>
+                            <li>Established new trade channels enabling 80% consecutive year growth</li>
+                            <li>Grew herbicide sales from zero to 29 KL volume</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Market Development Officer</h3>
+                                <p class="company">Northern Minerals Ltd – Market Development</p>
+                            </div>
+                            <span class="duration">Jun 1995 – Aug 1996</span>
+                        </div>
+                        <p><strong>Location:</strong> Yavatmal | <strong>Achievement:</strong> 200% Growth in Cotton Segment</p>
+                        <ul>
+                            <li>Devised micro-level plans to create demand at customer level</li>
+                            <li>Managed team of 4 field assistants across territory</li>
+                            <li>Achieved 200% product sales growth in cotton segment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ VENTURES SECTION ============ -->
+        <section id="ventures" class="ventures">
+            <div class="section-container">
+                <h2 class="section-title">Current Ventures & Leadership</h2>
+                <div class="ventures-grid">
+                    <div class="venture-card">
+                        <div class="role">Founder & Director</div>
+                        <h3>UPJAOO Brand</h3>
+                        <p><strong>Mission:</strong> Building a farmer-first brand committed to quality, integrity, and sustainable agriculture.</p>
+                        <p><strong>Focus Areas:</strong></p>
+                        <ul style="list-style: none; padding-left: 0; margin-top: 10px; color: #2c3e50; line-height: 1.8;">
+                            <li>✓ Soil health management & education</li>
+                            <li>✓ Sustainable farming practices</li>
+                            <li>✓ Livestock & balanced feed management</li>
+                            <li>✓ Agri-entrepreneurship support</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Impact:</strong> 50,000+ farmers reached through mobile and social media platforms</p>
+                    </div>
+
+                    <div class="venture-card">
+                        <div class="role">Co-Founder & Director</div>
+                        <h3>Digigrowe Services</h3>
+                        <p><strong>Vision:</strong> Leveraging digital technology to transform farmer engagement and agricultural decision-making.</p>
+                        <p><strong>Focus Areas:</strong></p>
+                        <ul style="list-style: none; padding-left: 0; margin-top: 10px; color: #2c3e50; line-height: 1.8;">
+                            <li>✓ Digital farming solutions</li>
+                            <li>✓ Data-driven agricultural practices</li>
+                            <li>✓ Farmer-centric technology platforms</li>
+                            <li>✓ Agri-tech innovation & adoption</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Impact:</strong> Bridging technology gap in traditional agriculture</p>
+                    </div>
+
+                    <div class="venture-card">
+                        <div class="role">Co-Founder & Director</div>
+                        <h3>Maxim Seeds Pvt Ltd</h3>
+                        <p><strong>Vision:</strong> Delivering high-quality crop science solutions to Indian farmers and agri-businesses.</p>
+                        <p><strong>Focus Areas:</strong></p>
+                        <ul style="list-style: none; padding-left: 0; margin-top: 10px; color: #2c3e50; line-height: 1.8;">
+                            <li>✓ Premium seed varieties (corn, vegetables)</li>
+                            <li>✓ Distribution network development</li>
+                            <li>✓ Farmer engagement programs</li>
+                            <li>✓ Market leadership in specialized segments</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Impact:</strong> Trusted seed brand in central India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION SECTION ============ -->
+        <section id="education" class="education">
+            <div class="section-container">
+                <h2 class="section-title">Education & Professional Development</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h3>PGDMSM</h3>
+                        <p class="institution">Bharati Vidyapeeth College, Nagpur</p>
+                        <p class="year">1995</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>M.Sc. Agriculture</h3>
+                        <p class="institution">Dr. P.D. K.V. Akola College of Agriculture, Nagpur University</p>
+                        <p class="year">1995</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>B.Sc. Agriculture</h3>
+                        <p class="institution">Dr. P.D. K.V. Akola College of Agriculture, Nagpur University</p>
+                        <p class="year">1993</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>MDP – Agri Input Management</h3>
+                        <p class="institution">Indian Institute of Management (IIM), Ahmedabad</p>
+                        <p class="year">2006</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Strategic Market Planning for Profitability & Growth</h3>
+                        <p class="institution">Indian Institute of Management (IIM), Lucknow</p>
+                        <p class="year">2010</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Leadership Management Program</h3>
+                        <p class="institution">Dow Chemicals Agri Division – International Program, China</p>
+                        <p class="year">2016</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+
+                        <div class="contact-item">
+                            <label>📧 Email</label>
+                            <p><a href="mailto:ashutoshnanoti@maximseeds.com">ashutoshnanoti@maximseeds.com</a></p>
+                            <p><a href="mailto:Ashutosh@upjaoo.in">Ashutosh@upjaoo.in</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>📱 Mobile</label>
+                            <p><a href="tel:+917718831525">+91 7718 831525</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>📍 Address</label>
+                            <p>707, Global Business Hub<br>Opp Eon IT Park, Kharadi<br>Pune 414014, India</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <label>🎯 Collaboration Opportunities</label>
+                            <p>Strategic Consulting | Speaking Engagements | Board Advisory | Mentorship | Training Programs</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject / Opportunity Type *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="e.g., Consulting, Speaking, Advisory">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your collaboration opportunity..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <p>&copy; 2025 Ashutosh Nanoti. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value || 'Not provided';
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Construct mailto link
+            const mailtoLink = `mailto:ashutoshnanoti@maximseeds.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+
+            // Log form data
+            console.log('Form submitted:', { name, email, phone, subject, message });
+        }
+
+        // Smooth scroll behavior for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
